@@ -1,0 +1,15 @@
+#footer{
+    background-color: #000;
+    min-height: 80px;
+    color: #fff;
+}
+.copy-r{
+    font-size: 18px;
+    margin-top: 25px;
+    margin-left: 70px;
+    text-transform: capitalize;
+}
+.footer_container {
+    padding-top: 0.6rem;
+
+}

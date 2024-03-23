@@ -1,0 +1,52 @@
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: #000;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid #000;
+    transition: all 400ms ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
+    border-color: transparent;
+}
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    background-color: #72bcf1;
+    padding: 0.8rem;
+}
+
+.navbar2 {
+    background: #000;
+    backdrop-filter: blur(15px);
+    z-index: 1;
+    }
+
+.navbar_menu li {
+    list-style: none;
+}
+
+.logo_img1 {
+    width: 90px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.navbar_options {
+    margin: 0 2rem;
+}
+
+.navbar_menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
