@@ -6,14 +6,14 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 30px;
-    background-color: rgb(238, 252, 255);
+    background-color: rgb(0, 0, 0);
     min-height: 85vh;
   }
   
   .heading {
     margin: 0 auto;
     max-width: 500px;
-    color: #000;
+    color: #ffffff;
     font-size: 3.1rem;
     line-height: 4.1rem;
     font-weight: bold;
@@ -22,7 +22,7 @@
   
   .heading span {
     background-clip: text;
-    background-image: linear-gradient(to right, #239ce2, #1369b9);
+    background-image: linear-gradient(to right, #ff00c8, #00fff2);
     color: transparent;
   }
   

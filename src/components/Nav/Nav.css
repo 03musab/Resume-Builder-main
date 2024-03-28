@@ -1,14 +1,31 @@
 .btn {
     width: max-content;
     display: inline-block;
-    color: #000;
-    padding: 0.75rem 1.2rem;
+    color: #fff; /* Change text color to white for better visibility */
+    padding: 0.95rem 1.75rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid #000;
+    font-weight: 700;
+    border: none; /* Remove border to make gradient background more prominent */
     transition: all 400ms ease;
     text-decoration: none;
-}
+    background: linear-gradient(45deg, #ffffff, #4400ff, #ff0000); /* Gradient background */
+    background-size: 200% 200%; /* Make the gradient larger to allow smooth transition */
+    animation: gradientBackground 10s infinite; /* Apply animation to continuously change gradient */
+  }
+  
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%; /* Start gradient position */
+    }
+    50% {
+      background-position: 100% 50%; /* Middle gradient position */
+    }
+    100% {
+      background-position: 0% 50%; /* End gradient position */
+    }
+  }
+  
 
 .btn:hover {
     background: #000;
@@ -20,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 4rem;
-    background-color: #72bcf1;
+    background: linear-gradient(to right, var(--gradient-color-1, #6f00ff), var(--gradient-color-2, #d400ff));
     padding: 0.8rem;
 }
 

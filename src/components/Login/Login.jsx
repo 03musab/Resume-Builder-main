@@ -37,6 +37,8 @@ const Login = () => {
 
   return (
     <div className={styles.container}>
+            <h1 style={{ textAlign: 'center', fontSize: '3rem', margin: '2rem 0', padding:'30px' }}>Ai-resume Builder</h1>
+
 
       <div className={styles.innerbox}>
          <h1 className={styles.headeing}>LOGIN</h1>

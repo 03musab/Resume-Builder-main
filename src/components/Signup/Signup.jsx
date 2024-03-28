@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import InputControl from '../InputControl/InputControl'
-import styles from './Signup.module.css'
-import { Link, useNavigate  } from 'react-router-dom'
+import React, { useState } from 'react';
+import InputControl from '../InputControl/InputControl';
+import styles from './Signup.module.css';
+import { Link, useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { database } from "../../firebase";
 
@@ -39,35 +39,38 @@ const Signup = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div>
+      
+      <div className={styles.container}>      
+      <h1 style={{ textAlign: 'center', fontSize: '3rem', margin: '2rem 0', padding:'30px' }}>Ai-resume Builder</h1>
 
-      <div className={styles.innerbox}>
-        <h1 className={styles.headeing}>SIGN UP</h1>
+        <div className={styles.innerbox}>
+          <h1 className={styles.headeing}>SIGN UP</h1>
 
-        <InputControl label="Name" placeholder='Enter Your Name'
-          onChange={(event) =>
-            setValues((prev) => ({ ...prev, name: event.target.value }))} />
-        <InputControl label="Email" placeholder='Enter Email Address'
-          onChange={(event) =>
-            setValues((prev) => ({ ...prev, email: event.target.value }))} />
-        <InputControl label="Password" placeholder='Enter Password'
-          onChange={(event) =>
-            setValues((prev) => ({ ...prev, pass: event.target.value }))} />
+          <InputControl label="Name" placeholder='Enter Your Name'
+            onChange={(event) =>
+              setValues((prev) => ({ ...prev, name: event.target.value }))} />
+          <InputControl label="Email" placeholder='Enter Email Address'
+            onChange={(event) =>
+              setValues((prev) => ({ ...prev, email: event.target.value }))} />
+          <InputControl label="Password" placeholder='Enter Password'
+            onChange={(event) =>
+              setValues((prev) => ({ ...prev, pass: event.target.value }))} />
 
-        <div className={styles.footers}>
-          <b className={styles.error}>{errorMsg}</b>
-          <button onClick={handleSubmission} disabled={submitButtonDisabled}>Signup</button>
-          <p>
-            Already have an account? {" "}
-            <span>
-              <Link to="/">Login</Link>
-            </span>
-          </p>
+          <div className={styles.footers}>
+            <b className={styles.error}>{errorMsg}</b>
+            <button onClick={handleSubmission} disabled={submitButtonDisabled}>Signup</button>
+            <p>
+              Already have an account? {" "}
+              <span>
+                <Link to="/">Login</Link>
+              </span>
+            </p>
+          </div>
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default Signup
+export default Signup;

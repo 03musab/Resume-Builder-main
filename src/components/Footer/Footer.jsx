@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer_container">
                 <div className="row">
                     <div className="copy-r">
-                        <p>&copy; 2022 - all rights reserved, Resume-Builder.</p>
+                        <p>&copy; 2024 - all rights reserved, Resume-Builder.</p>
                     </div>
                 </div>
             </div>

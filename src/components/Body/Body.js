@@ -12,7 +12,7 @@ import 'react-tabs/style/react-tabs.css';
 
 
 function Body() {
-  const colors = ["#239ce2", "#48bb78", "#0bc5ea", "#a0aec0", "#ed8936"];
+  const colors = ["#48bb78", "#0bc5ea", "#a0aec0", "#ed8936"];
   const sections = {
     basicInfo: "Basic Info",
     workExp: "Work Experience",
@@ -66,7 +66,7 @@ function Body() {
   return (
     <div>
       <div className={styles.container}>
-        <p className={styles.heading}>Resume Builder</p>
+        <p className={styles.heading}>AI-Resume Builder</p>
         <div className={styles.main}>
           <Editor
             sections={sections}
@@ -100,7 +100,6 @@ function Body() {
         <Tabs>
             <TabList>
               <Tab>Template 1</Tab>
-              <Tab>Template 2</Tab>
               <Tab>Template 2</Tab>
             </TabList>
 

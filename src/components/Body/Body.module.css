@@ -39,18 +39,34 @@
   .toolbar button {
     padding: 8px 16px;
     border-radius: 5px;
-    background-color: #239ce2;
+    background-color: #d32323;
     color: #fff;
     outline: none;
     border: none;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
     letter-spacing: 1px;
     display: flex;
     gap: 5px;
     align-items: center;
     cursor: pointer;
+    background: linear-gradient(45deg, #00ff37, #ff8989, #ff0000); /* Gradient background */
+    background-size: 200% 200%; /* Make the gradient larger to allow smooth transition */
+    animation: gradientBackground 10s infinite; /* Apply animation to continuously change gradient */
   }
+  
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%; /* Start gradient position */
+    }
+    50% {
+      background-position: 100% 50%; /* Middle gradient position */
+    }
+    100% {
+      background-position: 0% 50%; /* End gradient position */
+    }
+  }
+  
   
   .toolbar button svg {
     height: 20px;
